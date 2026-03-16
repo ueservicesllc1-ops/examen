@@ -8,7 +8,7 @@ import {
   GoogleAuthProvider,
   signInWithPopup
 } from "firebase/auth";
-import { doc, setDoc, getDoc } from "firebase/firestore";
+import { doc, setDoc, getDoc, collection, getDocs, query, orderBy, limit, increment, updateDoc } from "firebase/firestore";
 import questionsData from './questions.json';
 
 // State variables
@@ -31,6 +31,8 @@ const landingScreen = document.getElementById('landing-screen');
 const quizScreen = document.getElementById('quiz-screen');
 const resultsScreen = document.getElementById('results-screen');
 const dashboardScreen = document.getElementById('dashboard-screen');
+const adminAuthScreen = document.getElementById('admin-auth-screen');
+const adminDashboardScreen = document.getElementById('admin-dashboard-screen');
 const userHeader = document.getElementById('user-header');
 
 // Nav Buttons
@@ -69,6 +71,15 @@ const dashBackBtn = document.getElementById('dash-back-btn');
 const authBackBtn = document.getElementById('auth-back-btn');
 const landingBackBtn = document.getElementById('landing-back-btn');
 const exitBtn = document.getElementById('exit-btn');
+
+const openAdminLink = document.getElementById('open-admin-link');
+const adminPinInput = document.getElementById('admin-pin');
+const adminLoginBtn = document.getElementById('admin-login-btn');
+const adminBackBtn = document.getElementById('admin-back-btn');
+const adminExitBtn = document.getElementById('admin-exit-btn');
+const totalVisitsVal = document.getElementById('total-visits-val');
+const totalUsersVal = document.getElementById('total-users-val');
+const adminUsersList = document.getElementById('admin-users-list');
 
 const questionText = document.getElementById('question-text');
 const optionsContainer = document.getElementById('options-container');
@@ -126,7 +137,7 @@ onAuthStateChanged(auth, (user) => {
 });
 
 function showSection(section) {
-  [mainLanding, studyResources, authScreen, landingScreen, quizScreen, resultsScreen, dashboardScreen].forEach(s => s.classList.add('hidden'));
+  [mainLanding, studyResources, authScreen, landingScreen, quizScreen, resultsScreen, dashboardScreen, adminAuthScreen, adminDashboardScreen].forEach(s => s.classList.add('hidden'));
   section.classList.remove('hidden');
   
   // Header visibility
@@ -466,13 +477,14 @@ async function finishQuiz() {
       const prevData = userDoc.exists() ? userDoc.data() : { history: [] };
       
       await setDoc(userRef, {
+        email: currentUser.email,
         history: [...prevData.history, {
           date: new Date().toISOString(),
           score: score,
           incorrect: incorrectScore,
           passed: passed
         }]
-      });
+      }, { merge: true });
       updateDashboard();
     } catch (e) {
       console.error("Error saving score:", e);
@@ -491,5 +503,65 @@ exitBtn.addEventListener('click', () => {
   }
 });
 
-// Initial View
+// --- Admin Logic ---
+openAdminLink.addEventListener('click', () => showSection(adminAuthScreen));
+adminBackBtn.addEventListener('click', () => showSection(mainLanding));
+adminExitBtn.addEventListener('click', () => showSection(mainLanding));
+
+adminLoginBtn.addEventListener('click', () => {
+  if (adminPinInput.value === '1619') {
+    adminPinInput.value = '';
+    loadAdminDashboard();
+    showSection(adminDashboardScreen);
+  } else {
+    alert('PIN Incorrecto');
+  }
+});
+
+async function loadAdminDashboard() {
+  try {
+    // Get Stats
+    const statsRef = doc(db, "stats", "global");
+    const statsDoc = await getDoc(statsRef);
+    if (statsDoc.exists()) {
+      totalVisitsVal.textContent = statsDoc.data().visits || 0;
+    }
+
+    // Get Users
+    const usersRef = collection(db, "users");
+    const q = query(usersRef, limit(50));
+    const querySnapshot = await getDocs(q);
+    
+    totalUsersVal.textContent = querySnapshot.size;
+    adminUsersList.innerHTML = '';
+
+    querySnapshot.forEach((doc) => {
+      const data = doc.data();
+      const item = document.createElement('div');
+      item.className = 'history-item';
+      item.innerHTML = `
+        <div style="font-size: 0.85rem;">
+          <div style="font-weight: 600; color: #fff;">${data.email || 'Usuario sin email'}</div>
+          <div style="color: var(--text-muted); font-size: 0.75rem;">Exámenes: ${data.history?.length || 0}</div>
+        </div>
+        <div style="font-size: 0.75rem; color: var(--primary);">${new Date(data.history?.[data.history.length-1]?.date || Date.now()).toLocaleDateString()}</div>
+      `;
+      adminUsersList.appendChild(item);
+    });
+  } catch (err) {
+    console.error("Admin load error:", err);
+  }
+}
+
+async function trackVisit() {
+  try {
+    const statsRef = doc(db, "stats", "global");
+    await setDoc(statsRef, { visits: increment(1) }, { merge: true });
+  } catch (err) {
+    console.error("Visit tracking error:", err);
+  }
+}
+
+// Initial View & Tracking
+trackVisit();
 showSection(mainLanding);
