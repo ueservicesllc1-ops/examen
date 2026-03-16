@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">NJ Test Drive</string>
+    <string name="title_activity_main">NJ Test Drive</string>
+    <string name="package_name">com.freedomlabs.njtestdrive</string>
+    <string name="custom_url_scheme">com.freedomlabs.njtestdrive</string>
+</resources>
