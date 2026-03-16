@@ -79,6 +79,7 @@ const adminLoginBtn = document.getElementById('admin-login-btn');
 const adminBackBtn = document.getElementById('admin-back-btn');
 const adminExitBtn = document.getElementById('admin-exit-btn');
 const totalVisitsVal = document.getElementById('total-visits-val');
+const footerVisitsVal = document.getElementById('footer-visits-val');
 const totalUsersVal = document.getElementById('total-users-val');
 const adminUsersList = document.getElementById('admin-users-list');
 
@@ -558,6 +559,14 @@ async function trackVisit() {
   try {
     const statsRef = doc(db, "stats", "global");
     await setDoc(statsRef, { visits: increment(1) }, { merge: true });
+    
+    // Fetch the updated count to show in footer
+    const statsDoc = await getDoc(statsRef);
+    if (statsDoc.exists()) {
+      const count = statsDoc.data().visits || 0;
+      if (footerVisitsVal) footerVisitsVal.textContent = count.toLocaleString();
+      if (totalVisitsVal) totalVisitsVal.textContent = count;
+    }
   } catch (err) {
     console.error("Visit tracking error:", err);
   }

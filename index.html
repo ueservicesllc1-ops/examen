@@ -253,6 +253,16 @@
     </div>
     <footer style="margin-top: 3rem; text-align: center; font-size: 0.9rem; color: var(--text-muted); font-family: var(--font-main);">
       Potenciado y diseñado por <a href="https://freedomlabs.dev" target="_blank" style="color: var(--primary); text-decoration: none; font-weight: 600;">FreedomLabs</a>
+      
+      <!-- Visit Counter -->
+      <div id="footer-visit-counter" style="margin-top: 1.5rem; display: flex; flex-direction: column; align-items: center; gap: 0.3rem;">
+        <div style="font-size: 0.65rem; text-transform: uppercase; letter-spacing: 2px; opacity: 0.6;">Visitas en tiempo real</div>
+        <div id="real-time-visits" style="font-family: 'Outfit'; font-weight: 700; font-size: 1.2rem; color: #fff; background: rgba(255,255,255,0.05); padding: 0.3rem 1rem; border-radius: 50px; border: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; gap: 0.5rem; width: fit-content; margin: 0 auto;">
+          <span style="display: inline-block; width: 8px; height: 8px; background: var(--success); border-radius: 50%; box-shadow: 0 0 10px var(--success); animation: pulse 2s infinite;"></span>
+          <span id="footer-visits-val">...</span>
+        </div>
+      </div>
+
       <div style="margin-top: 1rem;">
         <span id="open-admin-link" style="font-size: 0.7rem; opacity: 0.3; cursor: pointer;">admin</span>
       </div>
