@@ -526,7 +526,7 @@ async function loadAdminDashboard() {
     const statsRef = doc(db, "stats", "global");
     const statsDoc = await getDoc(statsRef);
     if (statsDoc.exists()) {
-      totalVisitsVal.textContent = statsDoc.data().visits || 0;
+      totalVisitsVal.textContent = (statsDoc.data().visits || 0).toLocaleString();
     }
 
     // Get Users
@@ -558,14 +558,21 @@ async function loadAdminDashboard() {
 async function trackVisit() {
   try {
     const statsRef = doc(db, "stats", "global");
-    await setDoc(statsRef, { visits: increment(1) }, { merge: true });
+    
+    // Check if we've already tracked this session
+    const sessionTracked = sessionStorage.getItem('visit_tracked');
+    
+    if (!sessionTracked) {
+      await setDoc(statsRef, { visits: increment(1) }, { merge: true });
+      sessionStorage.setItem('visit_tracked', 'true');
+    }
     
     // Fetch the updated count to show in footer
     const statsDoc = await getDoc(statsRef);
     if (statsDoc.exists()) {
       const count = statsDoc.data().visits || 0;
       if (footerVisitsVal) footerVisitsVal.textContent = count.toLocaleString();
-      if (totalVisitsVal) totalVisitsVal.textContent = count;
+      if (totalVisitsVal) totalVisitsVal.textContent = count.toLocaleString();
     }
   } catch (err) {
     console.error("Visit tracking error:", err);
