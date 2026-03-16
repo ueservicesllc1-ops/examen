@@ -1,0 +1,1802 @@
+[
+  {
+    "id": 1,
+    "question": "¿Cuál es la distancia mínima para estacionar cerca de una toma de agua (fire hydrant)?",
+    "options": [
+      "10 pies",
+      "15 pies",
+      "25 pies",
+      "50 pies"
+    ],
+    "answer": "10 pies",
+    "explanation": "No debe estacionarse a menos de 10 pies de una boca de incendio."
+  },
+  {
+    "id": 2,
+    "question": "Al conducir en una zona escolar, el límite de velocidad es generalmente de:",
+    "options": [
+      "25 mph",
+      "35 mph",
+      "45 mph",
+      "50 mph"
+    ],
+    "answer": "25 mph",
+    "explanation": "El límite de velocidad en zonas escolares es de 25 mph."
+  },
+  {
+    "id": 3,
+    "question": "¿A qué distancia de una señal de STOP debe estacionar su vehículo?",
+    "options": [
+      "10 pies",
+      "25 pies",
+      "50 pies",
+      "75 pies"
+    ],
+    "answer": "50 pies",
+    "explanation": "No debe estacionarse a menos de 50 pies de una señal de pare (Stop Sign)."
+  },
+  {
+    "id": 4,
+    "question": "Si pierde su salida en una autopista, ¿qué debe hacer?",
+    "options": [
+      "Dar marcha atrás por el arcén",
+      "Hacer un giro en U en la mediana",
+      "Seguir hasta la siguiente salida",
+      "Detenerse y esperar ayuda"
+    ],
+    "answer": "Seguir hasta la siguiente salida",
+    "explanation": "Nunca retroceda en una autopista. Continúe hasta la próxima salida."
+  },
+  {
+    "id": 5,
+    "question": "¿Con cuánta anticipación debe activar su luz de giro antes de doblar?",
+    "options": [
+      "50 pies",
+      "100 pies",
+      "150 pies",
+      "200 pies"
+    ],
+    "answer": "100 pies",
+    "explanation": "Debe señalar al menos 100 pies antes de realizar un giro."
+  },
+  {
+    "id": 6,
+    "question": "¿Qué forma tiene una señal de YIELD (Ceda el paso)?",
+    "options": [
+      "Octágono",
+      "Triángulo",
+      "Círculo",
+      "Rombo"
+    ],
+    "answer": "Triángulo",
+    "explanation": "Las señales de ceda el paso son de color rojo y blanco, con forma de triángulo invertido."
+  },
+  {
+    "id": 7,
+    "question": "En New Jersey, se considera que una persona de 21 años o más está bajo los efectos del alcohol si su BAC es de:",
+    "options": [
+      "0.01% o más",
+      "0.05% o más",
+      "0.08% o más",
+      "0.10% o más"
+    ],
+    "answer": "0.08% o más",
+    "explanation": "En NJ, el límite legal de BAC para conductores de 21 años o más es de 0.08%."
+  },
+  {
+    "id": 8,
+    "question": "Las luces de carretera (high beams) se utilizan normalmente en:",
+    "options": [
+      "Calles de la ciudad con tráfico",
+      "Conducción en campo abierto sin tráfico a la vista",
+      "Condiciones de niebla intensa",
+      "Túneles"
+    ],
+    "answer": "Conducción en campo abierto sin tráfico a la vista",
+    "explanation": "Las luces de carretera son para campo abierto cuando no hay otros vehículos cerca."
+  },
+  {
+    "id": 9,
+    "question": "¿A qué velocidad puede empezar a ocurrir el hidroplaneo (hydroplaning)?",
+    "options": [
+      "25 mph",
+      "35 mph",
+      "45 mph",
+      "55 mph"
+    ],
+    "answer": "35 mph",
+    "explanation": "El hidroplaneo puede empezar a ocurrir a velocidades de 35 mph o más en carreteras mojadas."
+  },
+  {
+    "id": 10,
+    "question": "Cuando un autobús escolar se detiene en frente de una escuela para dejar o recoger niños, usted puede pasar a una velocidad de no más de:",
+    "options": [
+      "10 mph",
+      "15 mph",
+      "20 mph",
+      "25 mph"
+    ],
+    "answer": "10 mph",
+    "explanation": "Si un autobús está detenido directamente frente a una escuela, puede pasarlo a no más de 10 mph."
+  },
+  {
+    "id": 11,
+    "question": "La señal de mano con el brazo extendido hacia abajo significa:",
+    "options": [
+      "Giro a la izquierda",
+      "Giro a la derecha",
+      "Parar o disminuir la velocidad",
+      "Peligro adelante"
+    ],
+    "answer": "Parar o disminuir la velocidad",
+    "explanation": "Mano y brazo hacia abajo, palma hacia atrás significa detenerse o reducir la velocidad."
+  },
+  {
+    "id": 12,
+    "question": "¿Cuál es la multa típica por no ceder el paso a peatones en un cruce de peatones?",
+    "options": [
+      "$100",
+      "$200, hasta 15 días de cárcel y 2 puntos",
+      "$500, hasta 25 días de cárcel, 6 meses de suspensión de licencia y 2 puntos",
+      "Solo una advertencia verbal"
+    ],
+    "answer": "$500, hasta 25 días de cárcel, 6 meses de suspensión de licencia y 2 puntos",
+    "explanation": "Las multas por no ceder el paso son severas en NJ para proteger la seguridad de los peatones."
+  },
+  {
+    "id": 13,
+    "question": "Si su vehículo empieza a patinar (skid), usted debe:",
+    "options": [
+      "Pisar los frenos a fondo",
+      "Girar el volante hacia el lado que la parte trasera del auto está patinando",
+      "Acelerar para ganar tracción",
+      "Girar en dirección opuesta al patinazo"
+    ],
+    "answer": "Girar el volante hacia el lado que la parte trasera del auto está patinando",
+    "explanation": "Debe quitar el pie del acelerador y girar el volante en la dirección en que patina la parte trasera para recuperar el control."
+  },
+  {
+    "id": 14,
+    "question": "¿A qué distancia debe detenerse de un autobús escolar con luces rojas intermitentes en una carretera de dos carriles?",
+    "options": [
+      "10 pies",
+      "15 pies",
+      "25 pies",
+      "50 pies"
+    ],
+    "answer": "25 pies",
+    "explanation": "Debe detenerse al menos a 25 pies de distancia de un autobús escolar con luces rojas en marcha."
+  },
+  {
+    "id": 15,
+    "question": "Si tiene una llanta pinchada (flat tire) mientras conduce, debe:",
+    "options": [
+      "Frenar inmediatamente",
+      "Quitar el pie del acelerador y mantener el volante firme",
+      "Acelerar para llegar a un lugar seguro",
+      "Girar bruscamente hacia el arcén"
+    ],
+    "answer": "Quitar el pie del acelerador y mantener el volante firme",
+    "explanation": "Mantenga el vehículo en línea recta y deje que se detenga gradualmente por sí solo mientras reduce la velocidad."
+  },
+  {
+    "id": 16,
+    "question": "¿Cuál es la forma de una señal de advertencia (stop signs no incluidos)?",
+    "options": [
+      "Círculo",
+      "Triángulo",
+      "Rombo (Diamante)",
+      "Rectángulo"
+    ],
+    "answer": "Rombo (Diamante)",
+    "explanation": "La mayoría de las señales de advertencia son amarillas y con forma de rombo."
+  },
+  {
+    "id": 17,
+    "question": "Si un conductor bajo el programa GDL (Graduated Driver License) tiene 21 años o más, ¿qué restricciones de pasajeros se aplican?",
+    "options": [
+      "Solo 1 pasajero",
+      "Solo familiares",
+      "Ninguna restricción",
+      "No puede llevar pasajeros después de las 11:01 PM"
+    ],
+    "answer": "Ninguna restricción",
+    "explanation": "Para titulares de licencias GDL de 21 años o más, no se aplican restricciones de horario ni de pasajeros."
+  },
+  {
+    "id": 18,
+    "question": "¿Qué debe hacer si su vehículo cae al agua?",
+    "options": [
+      "Esperar a que el auto se hunda para abrir la puerta",
+      "Escapar por una ventana abierta mientras el auto todavía flota",
+      "Llamar al 911 antes de intentar salir",
+      "Sentarse en el asiento trasero para mayor seguridad"
+    ],
+    "answer": "Escapar por una ventana abierta mientras el auto todavía flota",
+    "explanation": "Es vital salir por la ventana antes de que la presión del agua impida abrir las puertas o ventanas."
+  },
+  {
+    "id": 19,
+    "question": "Al acercarse a una curva, ¿qué tiende a hacer su vehículo?",
+    "options": [
+      "Girar automáticamente",
+      "Seguir recto",
+      "Detenerse",
+      "Acelerar"
+    ],
+    "answer": "Seguir recto",
+    "explanation": "Debido a la inercia, un vehículo tiende a seguir en línea recta al entrar en una curva."
+  },
+  {
+    "id": 20,
+    "question": "En New Jersey, ¿es obligatorio el uso de cinturones de seguridad para quiénes?",
+    "options": [
+      "Solo el conductor",
+      "Solo el conductor y pasajeros delanteros",
+      "Solo niños bajo 18 años",
+      "El conductor y todos los pasajeros siempre"
+    ],
+    "answer": "El conductor y todos los pasajeros siempre",
+    "explanation": "NJ exige que el conductor y todos los pasajeros ocupantes del vehículo lleven puesto el cinturón de seguridad."
+  },
+  {
+    "id": 21,
+    "question": "¿Cuánto tiempo tiene para informar un cambio de dirección a la MVC?",
+    "options": [
+      "1 semana",
+      "2 semanas",
+      "1 mes",
+      "Solo cuando renueve su licencia"
+    ],
+    "answer": "1 semana",
+    "explanation": "Cualquier cambio de dirección dentro de NJ debe informarse a la MVC en el plazo de una semana después de mudarse."
+  },
+  {
+    "id": 22,
+    "question": "¿Cuánto tiempo tiene para informar un cambio de nombre legal a la MVC?",
+    "options": [
+      "1 semana",
+      "2 semanas",
+      "1 mes",
+      "Hasta la renovación de la licencia"
+    ],
+    "answer": "2 semanas",
+    "explanation": "Cualquier cambio de nombre legal debido a matrimonio, divorcio u orden judicial debe informarse a la MVC dentro de las dos semanas."
+  },
+  {
+    "id": 23,
+    "question": "En la conducción por la ciudad, es una buena práctica mirar hacia adelante por lo menos:",
+    "options": [
+      "2 segundos",
+      "5 segundos",
+      "12 segundos",
+      "A la esquina más cercana"
+    ],
+    "answer": "12 segundos",
+    "explanation": "Un conductor debe mirar al menos 12 segundos hacia adelante en la ciudad para poder reaccionar a tiempo."
+  },
+  {
+    "id": 24,
+    "question": "¿Qué significan dos líneas centrales sólidas en el centro de la carretera?",
+    "options": [
+      "Se permite pasar por ambos lados",
+      "No se permite pasar de ningún lado",
+      "Se permite pasar solo del lado derecho",
+      "Se permite pasar solo si es seguro"
+    ],
+    "answer": "No se permite pasar de ningún lado",
+    "explanation": "Las líneas dobles sólidas significan que el adelantamiento está prohibido en ambas direcciones."
+  },
+  {
+    "id": 25,
+    "question": "Si se muda a New Jersey desde otro estado, ¿cuánto tiempo tiene para solicitar una licencia de NJ?",
+    "options": [
+      "30 días",
+      "60 días o antes de que expire su licencia actual",
+      "90 días",
+      "6 meses"
+    ],
+    "answer": "60 días o antes de que expire su licencia actual",
+    "explanation": "Debe solicitar la licencia de NJ dentro de los 60 días posteriores a la mudanza o antes de que expire su licencia actual de otro estado, lo que ocurra primero."
+  },
+  {
+    "id": 26,
+    "question": "¿Cuál es la regla de oro para la distancia de seguimiento unificada para evitar el tailgating?",
+    "options": [
+      "Un metro por cada 10 mph",
+      "Tres segundos por cada 10 mph",
+      "Un largo del vehículo (20 pies) por cada 10 mph de velocidad",
+      "50 pies siempre"
+    ],
+    "answer": "Un largo del vehículo (20 pies) por cada 10 mph de velocidad",
+    "explanation": "Aunque se usa la regla de los 3 segundos, la regla general es mantener un largo de vehículo de distancia por cada 10 mph."
+  },
+  {
+    "id": 27,
+    "question": "Un triángulo de color rojo y naranja en la parte trasera de un vehículo significa:",
+    "options": [
+      "Vehículo de emergencia",
+      "Vehículo de transporte escolar",
+      "Vehículo de movimiento lento",
+      "Carga peligrosa"
+    ],
+    "answer": "Vehículo de movimiento lento",
+    "explanation": "Este emblema indica un vehículo que viaja a 25 mph o menos."
+  },
+  {
+    "id": 28,
+    "question": "¿Qué debe hacer si sus frenos fallan de repente?",
+    "options": [
+      "Cambiar a una marcha más baja y bombear el pedal del freno varias veces",
+      "Apagar el motor inmediatamente",
+      "Poner el auto en punto muerto (neutral)",
+      "Saltar del vehículo"
+    ],
+    "answer": "Cambiar a una marcha más baja y bombear el pedal del freno varias veces",
+    "explanation": "Bombear el pedal puede restaurar suficiente presión para detener el vehículo de forma segura."
+  },
+  {
+    "id": 29,
+    "question": "Al conducir bajo la lluvia, nieve o hielo, usted debe tener encendidas:",
+    "options": [
+      "Solo las luces de posición",
+      "Las luces de estacionamiento",
+      "Las luces delanteras (headlights) y los limpiaparabrisas",
+      "Las luces de carretera (high beams)"
+    ],
+    "answer": "Las luces delanteras (headlights) y los limpiaparabrisas",
+    "explanation": "La ley de NJ exige encender las luces siempre que los limpiaparabrisas estén en uso debido al clima."
+  },
+  {
+    "id": 30,
+    "question": "¿A qué distancia de un cruce de ferrocarril con luces intermitentes debe detenerse?",
+    "options": [
+      "10 pies",
+      "15 pies",
+      "25 pies",
+      "50 pies"
+    ],
+    "answer": "15 pies",
+    "explanation": "Debe detenerse al menos a 15 pies de los cruces de tren cuando las señales están activas."
+  },
+  {
+    "id": 31,
+    "question": "¿Qué significa una línea sólida blanca a través de un carril en una intersección?",
+    "options": [
+      "Línea de cruce de peatones",
+      "Línea de parada (Stop line)",
+      "Solo decorativa",
+      "Indica inicio de autopista"
+    ],
+    "answer": "Línea de parada (Stop line)",
+    "explanation": "Indica dónde debe detenerse el vehículo ante una señal de STOP o semáforo."
+  },
+  {
+    "id": 32,
+    "question": "Si una persona se emborracha en su casa y tiene un accidente automovilístico después de irse, usted podría:",
+    "options": [
+      "No tener ninguna responsabilidad",
+      "Ser involucrado en una demanda judicial",
+      "Ir a la cárcel por 10 años",
+      "Solo recibir una advertencia policial"
+    ],
+    "answer": "Ser involucrado en una demanda judicial",
+    "explanation": "En NJ, los anfitriones pueden ser considerados responsables por accidentes causados por invitados ebrios."
+  },
+  {
+    "id": 33,
+    "question": "Bajo la ley de NJ, los conductores con licencia GDL menores de 21 años deben colocar:",
+    "options": [
+      "Un adhesivo azul en el parabrisas",
+      "Dos calcomanías rojas reflectantes en las placas",
+      "No necesitan nada especial",
+      "Una luz amarilla en el techo"
+    ],
+    "answer": "Dos calcomanías rojas reflectantes en las placas",
+    "explanation": "Se requiere una en la placa delantera y otra en la trasera (Kyleigh's Law)."
+  },
+  {
+    "id": 34,
+    "question": "Si su auto empieza a hidroplanear, ¿qué es lo primero que debe hacer?",
+    "options": [
+      "Frenar bruscamente",
+      "Quitar el pie del acelerador",
+      "Acelerar para salir del agua",
+      "Girar el volante rápidamente"
+    ],
+    "answer": "Quitar el pie del acelerador",
+    "explanation": "No debe frenar; simplemente deje que el vehículo pierda velocidad hasta que las llantas vuelvan a tocar el pavimento."
+  },
+  {
+    "id": 35,
+    "question": "¿Cuál es la pena por conducir con una licencia suspendida (primera ofensa)?",
+    "options": [
+      "Solo una multa de $100",
+      "Multa de $500 y hasta 6 meses de suspensión adicional",
+      "Cárcel obligatoria de 1 año",
+      "Pérdida permanente de la licencia"
+    ],
+    "answer": "Multa de $500 y hasta 6 meses de suspensión adicional",
+    "explanation": "Conducir suspendido conlleva multas severas y extensiones de la suspensión."
+  },
+  {
+    "id": 36,
+    "question": "En una carretera de dos carriles, al pasar a un ciclista, se debe dejar una distancia de al menos:",
+    "options": [
+      "1 pie",
+      "2 pies",
+      "4 pies",
+      "8 pies"
+    ],
+    "answer": "4 pies",
+    "explanation": "La nueva ley de seguridad de NJ exige 4 pies de espacio al adelantar ciclistas o peatones si es posible."
+  },
+  {
+    "id": 37,
+    "question": "¿Qué debe hacer si un camión grande está haciendo un giro a la derecha?",
+    "options": [
+      "Intentar pasarlo por la derecha rápidamente",
+      "Darle espacio suficiente porque los camiones hacen giros anchos",
+      "Tocar la bocina para que se detenga",
+      "Encender sus luces de emergencia"
+    ],
+    "answer": "Darle espacio suficiente porque los camiones hacen giros anchos",
+    "explanation": "Los camiones a menudo necesitan invadir el carril izquierdo para completar un giro a la derecha."
+  },
+  {
+    "id": 38,
+    "question": "El término 'No-Zone' se refiere a:",
+    "options": [
+      "Zonas donde no se permite estacionar",
+      "Puntos ciegos de camiones y autobuses grandes",
+      "Áreas residenciales sin salida",
+      "Zonas de construcción"
+    ],
+    "answer": "Puntos ciegos de camiones y autobuses grandes",
+    "explanation": "Si no puede ver al conductor del camión en sus espejos, él no puede verlo a usted."
+  },
+  {
+    "id": 39,
+    "question": "Si toma medicamentos recetados, es su responsabilidad:",
+    "options": [
+      "No conducir bajo ninguna circunstancia",
+      "Revisar la etiqueta por efectos secundarios que afecten la conducción",
+      "Llevar la receta con usted siempre",
+      "Beber café para contrarrestar el efecto"
+    ],
+    "answer": "Revisar la etiqueta por efectos secundarios que afecten la conducción",
+    "explanation": "Muchos medicamentos legales pueden causar somnolencia o mareos."
+  },
+  {
+    "id": 40,
+    "question": "¿Qué significa una señal en forma de octágono?",
+    "options": [
+      "Ceda el paso (Yield)",
+      "Pare (Stop)",
+      "Advertencia de escuela",
+      "Ferrocarril"
+    ],
+    "answer": "Pare (Stop)",
+    "explanation": "La señal de STOP es la única señal de 8 lados (octagonal)."
+  },
+  {
+    "id": 41,
+    "question": "Al conducir de noche, usted debe ser capaz de detenerse:",
+    "options": [
+      "En 200 pies",
+      "Dentro de la distancia iluminada por sus luces delanteras",
+      "Solo cuando vea una señal de pare",
+      "A la misma distancia que durante el día"
+    ],
+    "answer": "Dentro de la distancia iluminada por sus luces delanteras",
+    "explanation": "Conducir más rápido que el alcance de sus luces se llama 'overdriving headlights'."
+  },
+  {
+    "id": 42,
+    "question": "Adelantar por la derecha está permitido solo en carreteras con más de un carril en la misma dirección si:",
+    "options": [
+      "El vehículo adelante está girando a la izquierda y hay espacio",
+      "Usted tiene prisa",
+      "El carril derecho está vacío",
+      "Nunca está permitido"
+    ],
+    "answer": "El vehículo adelante está girando a la izquierda y hay espacio",
+    "explanation": "Se puede pasar por la derecha si hay carril disponible y el auto de enfrente va a la izquierda."
+  },
+  {
+    "id": 43,
+    "question": "Si su pedal del acelerador se atasca, usted debe:",
+    "options": [
+      "Apagar el motor de inmediato",
+      "Cambiar a neutral y dirigir el auto fuera de la carretera",
+      "Pisar el freno con ambos pies",
+      "Tirar del freno de mano bruscamente"
+    ],
+    "answer": "Cambiar a neutral y dirigir el auto fuera de la carretera",
+    "explanation": "Poner la marcha en neutral desconecta el motor de las ruedas mientras mantiene la dirección asistida."
+  },
+  {
+    "id": 44,
+    "question": "¿Cuál es la penalidad por negarse a tomar la prueba del aliento (Breath Test) en NJ?",
+    "options": [
+      "Ninguna, es su derecho",
+      "Multa de $1000 por año durante 3 años (recargo)",
+      "Suspensión inmediata de 10 años",
+      "Servicio comunitario por 1 mes"
+    ],
+    "answer": "Multa de $1000 por año durante 3 años (recargo)",
+    "explanation": "Equivale a conducir con un BAC de 0.10% (Ley de Consentimiento Implícito)."
+  },
+  {
+    "id": 45,
+    "question": "Al acercarse a una intersección no controlada (sin señales), debe:",
+    "options": [
+      "Acelerar para pasar primero",
+      "Reducir la velocidad y estar listo para detenerse si hay tráfico",
+      "Tocar la bocina y seguir",
+      "Ignorar otros vehículos"
+    ],
+    "answer": "Reducir la velocidad y estar listo para detenerse si hay tráfico",
+    "explanation": "Se debe tratar como una señal de Yield (Ceda el paso)."
+  },
+  {
+    "id": 46,
+    "question": "¿Qué debe hacer si su vehículo patina?",
+    "options": [
+      "Girar el volante hacia el lado del patinazo",
+      "Frenar bruscamente",
+      "Cerrar los ojos",
+      "Girar en dirección opuesta al patinazo"
+    ],
+    "answer": "Girar el volante hacia el lado del patinazo",
+    "explanation": "Gire hacia donde la parte trasera del auto se está moviendo para recuperar tracción."
+  },
+  {
+    "id": 47,
+    "question": "Un semáforo con luz amarilla intermitente significa:",
+    "options": [
+      "Detenerse por completo",
+      "Proceder con precaución",
+      "El semáforo está roto, tratar como STOP",
+      "Acelerar antes de que cambie a rojo"
+    ],
+    "answer": "Proceder con precaución",
+    "explanation": "La luz amarilla intermitente advierte que se acerque con cuidado."
+  },
+  {
+    "id": 48,
+    "question": "¿A qué distancia debe estacionarse de una señal de cruce de peatones?",
+    "options": [
+      "10 pies",
+      "25 pies",
+      "50 pies",
+      "100 pies"
+    ],
+    "answer": "25 pies",
+    "explanation": "No debe estacionarse a menos de 25 pies de un cruce de peatones en una intersección."
+  },
+  {
+    "id": 49,
+    "question": "Las manos en el volante deberían estar en la posición de:",
+    "options": [
+      "10 y 2",
+      "9 y 3",
+      "12 y 6",
+      "8 y 4"
+    ],
+    "answer": "9 y 3",
+    "explanation": "Es la posición recomendada por la MVC para mejor control y seguridad del airbag."
+  },
+  {
+    "id": 50,
+    "question": "Uso de teléfonos celulares manos libres está permitido para:",
+    "options": [
+      "Conductores GDL menores de 21",
+      "Solo conductores mayores de 21 con licencia básica",
+      "Cualquier conductor en una autopista",
+      "Nadie en absoluto"
+    ],
+    "answer": "Solo conductores mayores de 21 con licencia básica",
+    "explanation": "Los conductores con licencia de aprendizaje (Learner's Permit) o GDL tienen prohibido el uso de cualquier dispositivo electrónico."
+  },
+  {
+    "id": 51,
+    "question": "Un niño de menos de 8 años que mide menos de 4 pies y 9 pulgadas debe ir sentado en:",
+    "options": [
+      "El asiento delantero con cinturón",
+      "En cualquier asiento con un adulto",
+      "En el asiento trasero en un sistema de seguridad para niños (booster seat)",
+      "Solo con cinturón de hombro"
+    ],
+    "answer": "En el asiento trasero en un sistema de seguridad para niños (booster seat)",
+    "explanation": "La ley de NJ exige el uso de asientos elevados (booster seats) hasta cumplir los 8 años o medir más de 57 pulgadas."
+  },
+  {
+    "id": 52,
+    "question": "Al conducir en una ciudad, es una buena práctica:",
+    "options": [
+      "Mirar al menos 12 segundos hacia adelante",
+      "Conducir siempre a 40 mph",
+      "Usar las luces de carretera constantemente",
+      "No usar las señales de giro"
+    ],
+    "answer": "Mirar al menos 12 segundos hacia adelante",
+    "explanation": "Mirar 12 segundos adelante permite identificar peligros con tiempo suficiente en áreas urbanas."
+  },
+  {
+    "id": 53,
+    "question": "Las señales de forma triangular significan:",
+    "options": [
+      "Pare (Stop)",
+      "Ceda el paso (Yield)",
+      "Cruces de ferrocarril",
+      "Zona de no adelantar"
+    ],
+    "answer": "Ceda el paso (Yield)",
+    "explanation": "La señal de Yield es la única señal oficial con forma de triángulo invertido."
+  },
+  {
+    "id": 54,
+    "question": "Si usted tiene un pinchazo o reventón de llanta, debe:",
+    "options": [
+      "Frenar de inmediato",
+      "Mantener el volante firme, quitar el pie del acelerador y dejar que el auto se detenga solo",
+      "Acelerar para mantener el control",
+      "Girar bruscamente hacia el arcén"
+    ],
+    "answer": "Mantener el volante firme, quitar el pie del acelerador y dejar que el auto se detenga solo",
+    "explanation": "Frenar durante un reventón puede hacer que el vehículo patine peligrosamente."
+  },
+  {
+    "id": 55,
+    "question": "Si su BAC es ligeramente superior al 0.05%, el riesgo de causar un accidente es:",
+    "options": [
+      "El mismo",
+      "Doble (2 veces mayor)",
+      "Seis veces mayor",
+      "25 veces mayor"
+    ],
+    "answer": "Doble (2 veces mayor)",
+    "explanation": "Con 0.05% de BAC el riesgo se duplica; con 0.10% es seis veces mayor."
+  },
+  {
+    "id": 56,
+    "question": "Una señal de forma de diamante es una señal de:",
+    "options": [
+      "Advertencia (Warning)",
+      "Regulación",
+      "Servicio",
+      "Dirección"
+    ],
+    "answer": "Advertencia (Warning)",
+    "explanation": "Las señales de advertencia suelen ser amarillas y en forma de diamante."
+  },
+  {
+    "id": 57,
+    "question": "¿En qué orden cambian los colores de un semáforo colgado verticalmente?",
+    "options": [
+      "Verde, Amarillo, Rojo",
+      "Rojo, Amarillo, Verde",
+      "Amarillo, Verde, Rojo",
+      "Verde, Rojo, Amarillo"
+    ],
+    "answer": "Rojo, Amarillo, Verde",
+    "explanation": "De arriba hacia abajo, el orden siempre es Rojo, Amarillo y Verde."
+  },
+  {
+    "id": 58,
+    "question": "Si un conductor lo está adelantando, usted debe:",
+    "options": [
+      "Acelerar para que no pase",
+      "Reducir la velocidad ligeramente para facilitar el adelantamiento",
+      "Encender sus luces de carretera",
+      "Moverse al arcén izquierdo"
+    ],
+    "answer": "Reducir la velocidad ligeramente para facilitar el adelantamiento",
+    "explanation": "Es cortesía y ley permitir que otros vehículos completen el adelantamiento con seguridad."
+  },
+  {
+    "id": 59,
+    "question": "Usted no puede estacionar a menos de cuántos pies de una señal de STOP:",
+    "options": [
+      "10 pies",
+      "25 pies",
+      "50 pies",
+      "75 pies"
+    ],
+    "answer": "50 pies",
+    "explanation": "La distancia mínima legal para estacionar cerca de una señal de STOP es 50 pies."
+  },
+  {
+    "id": 60,
+    "question": "¿Qué debe hacer un conductor después de conducir a través de un charco de agua profundo?",
+    "options": [
+      "Acelerar rápidamente",
+      "Probar los frenos bombeándolos suavemente",
+      "Apagar el motor",
+      "Cambiar una llanta"
+    ],
+    "answer": "Probar los frenos bombeándolos suavemente",
+    "explanation": "El agua puede mojar las pastillas de freno y reducir la capacidad de frenado momentáneamente."
+  },
+  {
+    "id": 61,
+    "question": "¿A qué edad es elegible un titular de permiso GDL (Especial de Estudiante) para obtener una licencia de conducir básica?",
+    "options": [
+      "16 años",
+      "17 años",
+      "18 años",
+      "21 años"
+    ],
+    "answer": "18 años",
+    "explanation": "Después de completar un año de conducción supervisada y el periodo de prueba de un año."
+  },
+  {
+    "id": 62,
+    "question": "Usted puede girar a la derecha en rojo después de:",
+    "options": [
+      "Tocar la bocina",
+      "Llegar a una parada completa y verificar el tráfico y peatones",
+      "Disminuir la velocidad un poco",
+      "Solo si hay un oficial de policía"
+    ],
+    "answer": "Llegar a una parada completa y verificar el tráfico y peatones",
+    "explanation": "A menos que haya una señal que diga 'No Turn on Red', es legal tras una parada completa."
+  },
+  {
+    "id": 63,
+    "question": "Bajo la ley de NJ, el uso de cinturones de seguridad es obligatorio para:",
+    "options": [
+      "Solo el conductor",
+      "Solo pasajeros delanteros",
+      "Solo menores de 18 años",
+      "El conductor y todos los pasajeros"
+    ],
+    "answer": "El conductor y todos los pasajeros",
+    "explanation": "NJ requiere que todas las personas dentro del vehículo usen el cinturón de seguridad."
+  },
+  {
+    "id": 64,
+    "question": "Si su vehículo patina, usted debe quitar el pie del pedal del:",
+    "options": [
+      "Freno",
+      "Acelerador",
+      "Embrague",
+      "Ninguno de los anteriores"
+    ],
+    "answer": "Acelerador",
+    "explanation": "Quitar el pie del acelerador ayuda a las ruedas a recuperar la tracción durante un patinazo."
+  },
+  {
+    "id": 65,
+    "question": "Para evitar la 'hipnosis de carretera' al conducir, es una buena práctica:",
+    "options": [
+      "Mirar fijamente al vehículo de adelante",
+      "Mover los ojos y no mirar fijamente nada por más de unos segundos",
+      "Escuchar música muy alta",
+      "Beber mucha agua"
+    ],
+    "answer": "Mover los ojos y no mirar fijamente nada por más de unos segundos",
+    "explanation": "La hipnosis de carretera ocurre al mirar un punto fijo por mucho tiempo en autopistas."
+  },
+  {
+    "id": 66,
+    "question": "Si un autobús escolar se detiene frente a una escuela para recoger o dejar niños, usted puede pasarlo a una velocidad de no más de:",
+    "options": [
+      "5 mph",
+      "10 mph",
+      "15 mph",
+      "25 mph"
+    ],
+    "answer": "10 mph",
+    "explanation": "Solo si el autobús está directamente frente a la escuela."
+  },
+  {
+    "id": 67,
+    "question": "Las luces de carretera (High Beams) se utilizan para:",
+    "options": [
+      "Conducir en la ciudad",
+      "Conducir en la niebla",
+      "Conducir en campo abierto (rutas oscuras sin tráfico)",
+      "Señalar a otros conductores para que se quiten"
+    ],
+    "answer": "Conducir en campo abierto (rutas oscuras sin tráfico)",
+    "explanation": "Las luces altas ayudan a ver más lejos en áreas rurales o sin iluminación."
+  },
+  {
+    "id": 68,
+    "question": "Una señal de forma de banderín (pennant) indica:",
+    "options": [
+      "Zona de escuela",
+      "Zona de no adelantar (No Passing Zone)",
+      "Hospital adelante",
+      "Cruce de peatones"
+    ],
+    "answer": "Zona de no adelantar (No Passing Zone)",
+    "explanation": "Es una señal amarilla con forma de triángulo acostado que se coloca a la izquierda de la carretera."
+  },
+  {
+    "id": 69,
+    "question": "¿Cuál es la distancia mínima permitida para estacionar cerca de un hidrante de incendios?",
+    "options": [
+      "10 pies",
+      "25 pies",
+      "50 pies",
+      "20 pies"
+    ],
+    "answer": "10 pies",
+    "explanation": "No debe estacionarse a menos de 10 pies de una toma de agua o hidrante."
+  },
+  {
+    "id": 70,
+    "question": "En condiciones climáticas adversas, un camión puede tardar hasta un ____ más en detenerse:",
+    "options": [
+      "10%",
+      "25%",
+      "50%",
+      "75%"
+    ],
+    "answer": "25%",
+    "explanation": "La masa del camión y la falta de tracción aumentan significativamente la distancia de frenado."
+  },
+  {
+    "id": 71,
+    "question": "Si usted tiene un nivel de BAC del 0.10%, el riesgo de accidente es de:",
+    "options": [
+      "2 veces mayor",
+      "6 veces mayor",
+      "10 veces mayor",
+      "25 veces mayor"
+    ],
+    "answer": "6 veces mayor",
+    "explanation": "El riesgo aumenta exponencialmente con el nivel de alcohol en sangre."
+  },
+  {
+    "id": 72,
+    "question": "La regla de los '3 segundos Plus' se utiliza para determinar:",
+    "options": [
+      "El tiempo de reacción",
+      "La distancia de seguimiento segura",
+      "Cuánto tiempo esperar en un semáforo",
+      "La velocidad permitida"
+    ],
+    "answer": "La distancia de seguimiento segura",
+    "explanation": "Proporciona un margen de seguridad suficiente para frenar ante un imprevisto."
+  },
+  {
+    "id": 73,
+    "question": "Si pierde una salida en una autopista, usted debe:",
+    "options": [
+      "Dar marcha atrás",
+      "Cruzar la mediana (median)",
+      "Continuar hasta la siguiente salida",
+      "Detenerse y esperar ayuda"
+    ],
+    "answer": "Continuar hasta la siguiente salida",
+    "explanation": "Nunca retroceda en una autopista; es extremadamente peligroso."
+  },
+  {
+    "id": 74,
+    "question": "Para conducir en reversa en línea recta, la posición de las manos debe ser:",
+    "options": [
+      "Ambas manos en el volante a las 10 y 2",
+      "Mano izquierda a las 12 y mano derecha en el respaldo del asiento del pasajero",
+      "Ambas manos a las 9 y 3",
+      "Una mano en el freno de mano"
+    ],
+    "answer": "Mano izquierda a las 12 y mano derecha en el respaldo del asiento del pasajero",
+    "explanation": "Esta posición permite girar el cuerpo para ver directamente a través de la ventana trasera."
+  },
+  {
+    "id": 75,
+    "question": "¿Qué debe hacer si ve luces intermitentes rojas o azules detrás de usted?",
+    "options": [
+      "Acelerar para alejarse",
+      "Detenerse inmediatamente donde esté",
+      "Moverse hacia la derecha extrema y detenerse de forma segura",
+      "Encender sus luces de carretera"
+    ],
+    "answer": "Moverse hacia la derecha extrema y detenerse de forma segura",
+    "explanation": "Debe ceder el paso a los vehículos de emergencia y de policía moviéndose a la derecha."
+  },
+  {
+    "id": 76,
+    "question": "Un conductor que acumule entre 12 y 14 puntos en un periodo de 24 meses recibirá:",
+    "options": [
+      "Una licencia nueva",
+      "Aviso de suspensión de licencia por correo",
+      "Un premio por conducir mucho",
+      "Una multa de $10"
+    ],
+    "answer": "Aviso de suspensión de licencia por correo",
+    "explanation": "Acumular puntos conlleva la pérdida de privilegios de conducción."
+  },
+  {
+    "id": 77,
+    "question": "¿Cuál es el límite de velocidad en una zona escolar de NJ?",
+    "options": [
+      "15 mph",
+      "25 mph",
+      "35 mph",
+      "50 mph"
+    ],
+    "answer": "25 mph",
+    "explanation": "A menos que se indique lo contrario por señales, el límite en zonas escolares y residenciales es 25 mph."
+  },
+  {
+    "id": 78,
+    "question": "Si desea girar a la izquierda en una intersección con semáforo, debe:",
+    "options": [
+      "Pasar rápido antes de que cambie",
+      "Ceder el paso al tráfico que viene de frente y a peatones",
+      "Tener prioridad absoluta",
+      "Girar desde el carril derecho"
+    ],
+    "answer": "Ceder el paso al tráfico que viene de frente y a peatones",
+    "explanation": "Al girar a la izquierda, siempre se debe ceder el paso a quienes van recto de frente."
+  },
+  {
+    "id": 79,
+    "question": "Uso de cinturones de seguridad aumenta sus posibilidades de sobrevivir a un choque en un:",
+    "options": [
+      "25%",
+      "40%",
+      "60%",
+      "90%"
+    ],
+    "answer": "60%",
+    "explanation": "Los cinturones mantienen a los pasajeros dentro del vehículo y evitan golpes contra el interior."
+  },
+  {
+    "id": 80,
+    "question": "En una carretera mojada, la velocidad debe reducirse en un:",
+    "options": [
+      "5%",
+      "10%",
+      "20%",
+      "50%"
+    ],
+    "answer": "10%",
+    "explanation": "Se recomienda reducir la velocidad al menos un 10-15% en lluvia ligera."
+  },
+  {
+    "id": 81,
+    "question": "Un infractor habitual es cualquier conductor cuya licencia haya sido suspendida:",
+    "options": [
+      "Una vez en un año",
+      "3 veces en 3 años",
+      "5 veces en 10 años",
+      "Nunca"
+    ],
+    "answer": "3 veces en 3 años",
+    "explanation": "La definición oficial de 'Habitual Offender' es 3 suspensiones en 3 años."
+  },
+  {
+    "id": 82,
+    "question": "Al estacionar cuesta abajo (downhill) con bordillo, las ruedas deben estar giradas:",
+    "options": [
+      "Hacia el bordillo",
+      "Lejos del bordillo",
+      "Rectas hacia adelante",
+      "Hacia la izquierda"
+    ],
+    "answer": "Hacia el bordillo",
+    "explanation": "Esto asegura que si el auto se mueve, ruede contra el bordillo y se detenga."
+  },
+  {
+    "id": 83,
+    "question": "Al estacionar cuesta arriba (uphill) con bordillo, las ruedas deben estar giradas:",
+    "options": [
+      "Hacia el bordillo",
+      "Lejos del bordillo (hacia la calle)",
+      "Rectas hacia adelante",
+      "Hacia la derecha"
+    ],
+    "answer": "Lejos del bordillo (hacia la calle)",
+    "explanation": "Si el auto retrocede, las ruedas golpearán el bordillo y detendrán el vehículo."
+  },
+  {
+    "id": 84,
+    "question": "¿Cuál es el nivel de BAC en el que se considera legalmente ebrio a un conductor de vehículo comercial en NJ?",
+    "options": [
+      "0.01%",
+      "0.04%",
+      "0.08%",
+      "0.10%"
+    ],
+    "answer": "0.04%",
+    "explanation": "Los conductores comerciales (CDL) tienen un límite más estricto que los conductores normales (0.08%)."
+  },
+  {
+    "id": 85,
+    "question": "La 'Ley de Moverse' (Move Over Law) de NJ requiere que los conductores:",
+    "options": [
+      "Aceleraren para pasar rápido",
+      "Cambien de carril si es seguro y reduzcan la velocidad al acercarse a vehículos de emergencia detenidos",
+      "Se detengan en medio de la carretera",
+      "Toquen la bocina"
+    ],
+    "answer": "Cambien de carril si es seguro y reduzcan la velocidad al acercarse a vehículos de emergencia detenidos",
+    "explanation": "Aplica para vehículos de emergencia, grúas y camiones de mantenimiento con luces encendidas."
+  },
+  {
+    "id": 86,
+    "question": "Al conducir en niebla, usted debe utilizar:",
+    "options": [
+      "Luces de carretera (High beams)",
+      "Luces de cruce (Low beams)",
+      "Solo luces de estacionamiento",
+      "Ninguna luz"
+    ],
+    "answer": "Luces de cruce (Low beams)",
+    "explanation": "Las luces altas se reflejan en la niebla y empeoran la visibilidad."
+  },
+  {
+    "id": 87,
+    "question": "¿A qué distancia debe estacionarse de una estación de bomberos si está del mismo lado de la calle?",
+    "options": [
+      "10 pies",
+      "20 pies",
+      "50 pies",
+      "75 pies"
+    ],
+    "answer": "20 pies",
+    "explanation": "La distancia mínima es 20 pies del mismo lado y 75 pies del lado opuesto."
+  },
+  {
+    "id": 88,
+    "question": "Las luces delanteras deben estar encendidas:",
+    "options": [
+      "Solo cuando está muy oscuro",
+      "Desde media hora después de la puesta del sol hasta media hora antes de la salida del sol",
+      "Solo en las autopistas",
+      "De 10 PM a 6 AM"
+    ],
+    "answer": "Desde media hora después de la puesta del sol hasta media hora antes de la salida del sol",
+    "explanation": "También deben usarse cuando la visibilidad sea menor a 500 pies o se usen los limpiaparabrisas."
+  },
+  {
+    "id": 89,
+    "question": "Para obtener una licencia de conducir básica en NJ, su visión debe ser al menos:",
+    "options": [
+      "20/20",
+      "20/40",
+      "20/50",
+      "20/100"
+    ],
+    "answer": "20/50",
+    "explanation": "Con o sin lentes correctores, debe tener al menos 20/50 de agudeza visual."
+  },
+  {
+    "id": 90,
+    "question": "La penalidad por alterar una licencia de conducir puede incluir:",
+    "options": [
+      "Multa de $10",
+      "Pérdida de la licencia, multa de hasta $1000 y hasta 6 meses de cárcel",
+      "Solo una advertencia escrita",
+      "Servicio comunitario por 1 día"
+    ],
+    "answer": "Pérdida de la licencia, multa de hasta $1000 y hasta 6 meses de cárcel",
+    "explanation": "Alterar un documento oficial es un delito grave en NJ."
+  },
+  {
+    "id": 91,
+    "question": "Obtener ilegalmente una licencia de conducir puede resultar en:",
+    "options": [
+      "Multa de $200-$500 y/o cárcel de 30-90 días",
+      "Solo tener que devolver la licencia",
+      "No poder conducir por 1 mes",
+      "Tener que repetir el examen"
+    ],
+    "answer": "Multa de $200-$500 y/o cárcel de 30-90 días",
+    "explanation": "Fraude en el proceso de obtención conlleva multas y tiempo en prisión."
+  },
+  {
+    "id": 92,
+    "question": "Después de completar el programa de conductor en libertad condicional (Probationary Driver), usted estará a prueba por:",
+    "options": [
+      "6 meses",
+      "1 año",
+      "2 años",
+      "5 años"
+    ],
+    "answer": "1 año",
+    "explanation": "Tras obtener la licencia de prueba (Probationary), debe conducir un año antes de obtener la básica."
+  },
+  {
+    "id": 93,
+    "question": "Bajo la ley GDL, un conductor con permiso especial debe estar acompañado por un conductor supervisor que:",
+    "options": [
+      "Tenga al menos 18 años",
+      "Tenga al menos 21 años y 3 años de experiencia conduciendo en NJ",
+      "Solo sea un amigo con licencia",
+      "Sea su instructor de manejo exclusivamente"
+    ],
+    "answer": "Tenga al menos 21 años y 3 años de experiencia conduciendo en NJ",
+    "explanation": "Son los requisitos mínimos para ser un supervisor legal de un titular de permiso."
+  },
+  {
+    "id": 94,
+    "question": "¿Cuántos pasajeros puede llevar un titular de permiso GDL en el vehículo?",
+    "options": [
+      "Cualquier número dentro de la capacidad",
+      "Uno, a menos que esté acompañado por un padre/tutor",
+      "Ninguno",
+      "Solo familiares directos"
+    ],
+    "answer": "Uno, a menos que esté acompañado por un padre/tutor",
+    "explanation": "La restricción de pasajeros limita a un acompañante adicional además de los dependientes."
+  },
+  {
+    "id": 95,
+    "question": "¿A qué hora tiene prohibido conducir un titular de permiso GDL menor de 21 años?",
+    "options": [
+      "Medianoche a 5 AM",
+      "11:01 PM a 5:00 AM",
+      "9:00 PM a 6:00 AM",
+      "No hay restricciones de horario"
+    ],
+    "answer": "11:01 PM a 5:00 AM",
+    "explanation": "Restricción nocturna obligatoria para conductores jóvenes en el programa GDL."
+  },
+  {
+    "id": 96,
+    "question": "Si dos vehículos llegan a una intersección no controlada al mismo tiempo:",
+    "options": [
+      "El vehículo de la izquierda cede al de la derecha",
+      "El vehículo de la derecha cede al de la izquierda",
+      "El vehículo más rápido tiene prioridad",
+      "El vehículo más grande tiene prioridad"
+    ],
+    "answer": "El vehículo de la izquierda cede al de la derecha",
+    "explanation": "Es la regla general de paso en intersecciones sin señales."
+  },
+  {
+    "id": 97,
+    "question": "Al acercarse a una curva, su vehículo tenderá a:",
+    "options": [
+      "Girar automáticamente",
+      "Seguir recto",
+      "Aumentar la velocidad",
+      "Detenerse"
+    ],
+    "answer": "Seguir recto",
+    "explanation": "Por la inercia, el vehículo intentará mantener su trayectoria recta; se debe frenar antes de entrar en la curva."
+  },
+  {
+    "id": 98,
+    "question": "¿Cuál es la penalidad por no ceder el paso a un peatón en un cruce de peatones?",
+    "options": [
+      "Multa de $10",
+      "Multa de $500, hasta 25 días de cárcel, 6 meses de suspensión y 2 puntos",
+      "No hay penalidad",
+      "Solo 1 punto en la licencia"
+    ],
+    "answer": "Multa de $500, hasta 25 días de cárcel, 6 meses de suspensión y 2 puntos",
+    "explanation": "NJ protege severamente a los peatones en los cruces marcados."
+  },
+  {
+    "id": 99,
+    "question": "Si su vehículo patina en el barro o nieve, usted debe:",
+    "options": [
+      "Aceleraren a fondo",
+      "Mover el auto hacia adelante y hacia atrás cambiando entre marcha baja y reversa",
+      "Esperar a que se derrita",
+      "Bombear los frenos bruscamente"
+    ],
+    "answer": "Mover el auto hacia adelante y hacia atrás cambiando entre marcha baja y reversa",
+    "explanation": "Esto se conoce como 'rocking the vehicle' para ganar tracción inicial."
+  },
+  {
+    "id": 100,
+    "question": "El término 'Espacio de Colchón' (Space Cushion) se refiere a:",
+    "options": [
+      "El aire en el neumático",
+      "La distancia entre su vehículo y los demás por todos los lados",
+      "El airbag",
+      "El acolchado del asiento"
+    ],
+    "answer": "La distancia entre su vehículo y los demás por todos los lados",
+    "explanation": "Da tiempo para reaccionar ante emergencias o errores ajenos."
+  },
+  {
+    "id": 101,
+    "question": "Usted debe usar señales de giro en todas las siguientes situaciones EXCEPTO:",
+    "options": [
+      "Al girar",
+      "Al cambiar de carril",
+      "Al detenerse o disminuir la velocidad",
+      "Al conducir en línea recta por el mismo carril"
+    ],
+    "answer": "Al conducir en línea recta por el mismo carril",
+    "explanation": "Las señales son para advertir cambios en la trayectoria de conducción."
+  },
+  {
+    "id": 102,
+    "question": "¿Cuál es el propósito del carril de desaceleración?",
+    "options": [
+      "Para pasar otros autos",
+      "Para entrar a la autopista",
+      "Para salir de la autopista y reducir la velocidad",
+      "Para vehículos que van muy lento"
+    ],
+    "answer": "Para salir de la autopista y reducir la velocidad",
+    "explanation": "Permite frenar sin estorbar al tráfico que sigue en los carriles rápidos."
+  },
+  {
+    "id": 103,
+    "question": "¿Qué debe hacer si ve una señal de 'Yield' (Ceda el paso)?",
+    "options": [
+      "Ignorarla si no viene nadie",
+      "Reducir la velocidad y ceder el paso al tráfico en la intersección",
+      "Detenerse siempre",
+      "Acelerar"
+    ],
+    "answer": "Reducir la velocidad y ceder el paso al tráfico en la intersección",
+    "explanation": "Se debe estar preparado para detenerse si hay autos o peatones cruzando."
+  },
+  {
+    "id": 104,
+    "question": "El uso de luces delanteras es obligatorio cuando la visibilidad es inferior a:",
+    "options": [
+      "100 pies",
+      "300 pies",
+      "500 pies",
+      "1000 pies"
+    ],
+    "answer": "500 pies",
+    "explanation": "Es la distancia estándar para seguridad en condiciones de baja visibilidad."
+  },
+  {
+    "id": 105,
+    "question": "¿Cuál es la forma de una señal de advertencia de vía de ferrocarril?",
+    "options": [
+      "Círculo amarillo y negro",
+      "Octágono rojo",
+      "Triángulo invertido",
+      "Diamante amarillo"
+    ],
+    "answer": "Círculo amarillo y negro",
+    "explanation": "La señal de advertencia avanzada de ferrocarril es circular con una 'X' y las letras 'RR'."
+  },
+  {
+    "id": 106,
+    "question": "¿Cuántos pies antes de girar debe encender su señal de giro?",
+    "options": [
+      "25 pies",
+      "50 pies",
+      "100 pies",
+      "300 pies"
+    ],
+    "answer": "100 pies",
+    "explanation": "Da aviso suficiente a los conductores que vienen detrás."
+  },
+  {
+    "id": 107,
+    "question": "¿En qué situación se puede usar el carril de hombro (shoulder) para adelantar?",
+    "options": [
+      "Si el auto de enfrente va muy lento",
+      "Si hay un accidente bloqueando",
+      "Nunca",
+      "Solo en emergencias médicas"
+    ],
+    "answer": "Nunca",
+    "explanation": "Es ilegal usar el arcén o hombro de la carretera para adelantar a otros vehículos."
+  },
+  {
+    "id": 108,
+    "question": "Si su BAC es de 0.15%, el riesgo de tener un accidente es de:",
+    "options": [
+      "6 veces mayor",
+      "10 veces mayor",
+      "25 veces mayor",
+      "50 veces mayor"
+    ],
+    "answer": "25 veces mayor",
+    "explanation": "A este nivel de alcohol, la capacidad de conducción está extremadamente comprometida."
+  },
+  {
+    "id": 109,
+    "question": "Un conductor principiante debe tener el permiso de aprendizaje por un mínimo de:",
+    "options": [
+      "3 meses",
+      "6 meses",
+      "1 año",
+      "2 años"
+    ],
+    "answer": "6 meses",
+    "explanation": "Para menores de 21 años, el requisito es de 6 meses de conducción supervisada antes del examen práctico."
+  },
+  {
+    "id": 110,
+    "question": "En NJ, los neumáticos deben tener una profundidad de banda de rodamiento de al menos:",
+    "options": [
+      "1/4 de pulgada",
+      "1/16 de pulgada",
+      "1/2 pulgada",
+      "Ninguna, con que tengan aire basta"
+    ],
+    "answer": "1/16 de pulgada",
+    "explanation": "Menos de 1/16 de pulgada se considera un neumático liso e inseguro (no pasa inspección)."
+  },
+  {
+    "id": 111,
+    "question": "¿A qué distancia debe detenerse de un autobús escolar con luces rojas intermitentes en una carretera de dos carriles?",
+    "options": [
+      "10 pies",
+      "25 pies",
+      "50 pies",
+      "100 pies"
+    ],
+    "answer": "25 pies",
+    "explanation": "Debe detenerse al menos a 25 pies de distancia si viene de cualquier dirección en una carretera pública."
+  },
+  {
+    "id": 112,
+    "question": "En NJ, ¿cuándo es legal usar neumáticos con clavos (studded tires)?",
+    "options": [
+      "Todo el año",
+      "Nunca son legales",
+      "Entre el 15 de noviembre y el 1 de abril",
+      "Solo durante tormentas de nieve"
+    ],
+    "answer": "Entre el 15 de noviembre y el 1 de abril",
+    "explanation": "Es el periodo permitido para mejorar la tracción en invierno sin dañar excesivamente el pavimento."
+  },
+  {
+    "id": 113,
+    "question": "Si usted tiene menos de 21 años, la ley de NJ establece que usted puede estar bajo la influencia si su BAC es:",
+    "options": [
+      "Más de 0.01%",
+      "Más de 0.05%",
+      "Más de 0.08%",
+      "Más de 0.10%"
+    ],
+    "answer": "Más de 0.01%",
+    "explanation": "NJ tiene una política de tolerancia cero para conductores menores de edad."
+  },
+  {
+    "id": 114,
+    "question": "Un titular de permiso GDL de 21 años o más tiene las siguientes restricciones de tiempo:",
+    "options": [
+      "11:01 PM a 5:00 AM",
+      "Medianoche a 5:00 AM",
+      "9:00 PM a 6:00 AM",
+      "Ninguna"
+    ],
+    "answer": "Ninguna",
+    "explanation": "Los conductores de 21 años o más en el programa GDL no tienen restricciones de horario ni de calcomanías."
+  },
+  {
+    "id": 115,
+    "question": "¿Cuál es la forma de una señal de cruce de escuela?",
+    "options": [
+      "Diamante",
+      "Pentágono (5 lados)",
+      "Círculo",
+      "Triángulo"
+    ],
+    "answer": "Pentágono (5 lados)",
+    "explanation": "Las señales de zona escolar y cruce escolar tienen forma de pentágono hacia arriba."
+  },
+  {
+    "id": 116,
+    "question": "Si su vehículo se sale del pavimento hacia el arcén de tierra, usted debe:",
+    "options": [
+      "Girar rápido hacia la izquierda",
+      "Frenar con fuerza",
+      "Disminuir la velocidad y volver al pavimento lentamente cuando sea seguro",
+      "Acelerar para volver a la carretera"
+    ],
+    "answer": "Disminuir la velocidad y volver al pavimento lentamente cuando sea seguro",
+    "explanation": "No intente girar bruscamente; deje que el auto pierda velocidad antes de reingresar al carril."
+  },
+  {
+    "id": 117,
+    "question": "El seguro de automóvil obligatorio en New Jersey es de tipo:",
+    "options": [
+      "Seguro de colisión",
+      "Seguro de responsabilidad civil (Liability)",
+      "Seguro de robo",
+      "Seguro de vida"
+    ],
+    "answer": "Seguro de responsabilidad civil (Liability)",
+    "explanation": "Todo vehículo registrado en NJ debe tener seguro de responsabilidad civil."
+  },
+  {
+    "id": 118,
+    "question": "¿Qué debe hacer si su vehículo empieza a fallar mecánicamente en la carretera?",
+    "options": [
+      "Detenerse en el carril izquierdo",
+      "Encender las luces de emergencia y salir de la carretera hacia el arcén derecho",
+      "Seguir conduciendo hasta llegar a casa",
+      "Abandonar el vehículo de inmediato"
+    ],
+    "answer": "Encender las luces de emergencia y salir de la carretera hacia el arcén derecho",
+    "explanation": "La seguridad propia y de los demás requiere despejar los carriles de tráfico."
+  },
+  {
+    "id": 119,
+    "question": "Un conductor con licencia de prueba (Probationary) tiene prohibido el uso de:",
+    "options": [
+      "Solo teléfonos celulares de mano",
+      "Teléfonos celulares de mano o manos libres y dispositivos electrónicos",
+      "Solo reproductores de música",
+      "GPS instalado en el auto"
+    ],
+    "answer": "Teléfonos celulares de mano o manos libres y dispositivos electrónicos",
+    "explanation": "Bajo las reglas GDL, no se permite ningún uso de dispositivos de comunicación."
+  },
+  {
+    "id": 120,
+    "question": "¿A cuántos pies de una señal de cruce de peatones puede estacionar?",
+    "options": [
+      "10 pies",
+      "25 pies",
+      "50 pies",
+      "100 pies"
+    ],
+    "answer": "25 pies",
+    "explanation": "Mantener despejada la visibilidad cerca de los cruces es vital para la seguridad de los peatones."
+  },
+  {
+    "id": 121,
+    "question": "Si pierde sus placas (tablillas/licence plates), debe notificar primero a:",
+    "options": [
+      "La MVC",
+      "La policía local",
+      "Su compañía de seguros",
+      "Al fabricante del auto"
+    ],
+    "answer": "La policía local",
+    "explanation": "Debe reportar el robo o pérdida a la policía y guardar el reporte para la MVC."
+  },
+  {
+    "id": 122,
+    "question": "¿Qué significa un solo centro de línea sólida amarilla?",
+    "options": [
+      "Se permite pasar",
+      "No se permite pasar",
+      "Solo se permite girar a la derecha",
+      "Indica carril de autobús"
+    ],
+    "answer": "No se permite pasar",
+    "explanation": "Las líneas sólidas prohíben el cambio de carril para adelantar."
+  },
+  {
+    "id": 123,
+    "question": "Si usted tiene una emergencia médica y debe usar un celular mientras conduce, usted debe:",
+    "options": [
+      "Seguir conduciendo normal",
+      "Mantener una mano en el volante y reportar la emergencia a las autoridades",
+      "Detenerse en un lugar seguro",
+      "No es legal bajo ninguna circunstancia"
+    ],
+    "answer": "Mantener una mano en el volante y reportar la emergencia a las autoridades",
+    "explanation": "La ley permite excepciones para reportar incendios, accidentes o emergencias médicas graves."
+  },
+  {
+    "id": 124,
+    "question": "Al conducir cerca de un camión grande, usted debe recordar que los camiones tienen:",
+    "options": [
+      "Mejores frenos que su auto",
+      "Puntos ciegos más grandes (No-Zones)",
+      "Prioridad en todas las señales",
+      "Mayor velocidad máxima"
+    ],
+    "answer": "Puntos ciegos más grandes (No-Zones)",
+    "explanation": "Los camiones tienen grandes áreas donde el conductor no puede verlo."
+  },
+  {
+    "id": 125,
+    "question": "Si su BAC está por encima del 0.15%, su riesgo de accidente es ____ veces mayor:",
+    "options": [
+      "2",
+      "6",
+      "25",
+      "100"
+    ],
+    "answer": "25",
+    "explanation": "El riesgo de choque se dispara dramáticamente con este nivel de alcohol."
+  },
+  {
+    "id": 126,
+    "question": "¿Cuál es la multa por no quitar la nieve o el hielo de su vehículo antes de conducir?",
+    "options": [
+      "De $25 a $75",
+      "De $50 a $150",
+      "De $100 a $500",
+      "No hay multa"
+    ],
+    "answer": "De $25 a $75",
+    "explanation": "Si la nieve se desprende y causa daño, la multa puede subir significativamente."
+  },
+  {
+    "id": 127,
+    "question": "Al entrar en una curva, usted debe:",
+    "options": [
+      "Frenar mientras está en la curva",
+      "Reducir la velocidad antes de entrar en la curva",
+      "Acelerar para ganar tracción",
+      "Mantener la misma velocidad"
+    ],
+    "answer": "Reducir la velocidad antes de entrar en la curva",
+    "explanation": "Esto evita que la inercia saque el vehículo de la trayectoria."
+  },
+  {
+    "id": 128,
+    "question": "En NJ, ¿a qué distancia de un hidrante de incendios puede estacionarse?",
+    "options": [
+      "10 pies",
+      "15 pies",
+      "25 pies",
+      "50 pies"
+    ],
+    "answer": "10 pies",
+    "explanation": "Debe dejar al menos 10 pies de espacio para acceso de bomberos."
+  },
+  {
+    "id": 129,
+    "question": "¿Cuál es la penalidad por la primera ofensa de DUI (BAC .08% a .10%)?",
+    "options": [
+      "Suspensión de licencia de 3 meses a 1 año",
+      "Instalación de IID por 3 meses, multas y recargos de seguro",
+      "10 años de cárcel",
+      "Solo una multa de $10"
+    ],
+    "answer": "Instalación de IID por 3 meses, multas y recargos de seguro",
+    "explanation": "Las leyes actuales enfatizan el uso del dispositivo de bloqueo de encendido (IID)."
+  },
+  {
+    "id": 130,
+    "question": "Usted no puede estacionar a menos de ____ de una señal de Yield:",
+    "options": [
+      "10 pies",
+      "25 pies",
+      "50 pies",
+      "No hay restricción específica"
+    ],
+    "answer": "50 pies",
+    "explanation": "Se aplica la misma distancia que para las señales de STOP para no obstruir la visibilidad."
+  },
+  {
+    "id": 131,
+    "question": "¿Qué significa un diamante naranja?",
+    "options": [
+      "Zona escolar",
+      "Zona de mantenimiento o construcción",
+      "Parada de autobús",
+      "Aviso de hospital"
+    ],
+    "answer": "Zona de mantenimiento o construcción",
+    "explanation": "El naranja siempre indica obras en la carretera."
+  },
+  {
+    "id": 132,
+    "question": "¿A qué velocidad puede pasar a un camión de basura que está recogiendo residuos?",
+    "options": [
+      "15 mph",
+      "25 mph",
+      "Reducir la velocidad y pasar con precaución",
+      "No se puede pasar"
+    ],
+    "answer": "Reducir la velocidad y pasar con precaución",
+    "explanation": "Debe estar atento a los trabajadores y peatones cerca del camión."
+  },
+  {
+    "id": 133,
+    "question": "Si su dirección (steering) falla de repente, usted debe:",
+    "options": [
+      "Frenar de golpe",
+      "Quitar el pie del acelerador y dejar que el vehículo se detenga solo",
+      "Poner el auto en reversa",
+      "Intentar girar el volante con fuerza"
+    ],
+    "answer": "Quitar el pie del acelerador y dejar que el vehículo se detenga solo",
+    "explanation": "No frene bruscamente; mantenga el control de la inercia hasta detenerse."
+  },
+  {
+    "id": 134,
+    "question": "¿Cuál es la forma de una señal de Ceda el paso (Yield)?",
+    "options": [
+      "Octágono",
+      "Triángulo",
+      "Círculo",
+      "Diamante"
+    ],
+    "answer": "Triángulo",
+    "explanation": "Es un triángulo invertido con bordes rojos."
+  },
+  {
+    "id": 135,
+    "question": "Si usted se muda de estado a NJ, debe registrar su vehículo dentro de:",
+    "options": [
+      "14 días",
+      "30 días",
+      "60 días",
+      "6 meses"
+    ],
+    "answer": "60 días",
+    "explanation": "A menos que el registro actual expire antes de ese tiempo."
+  },
+  {
+    "id": 136,
+    "question": "En una carretera sin marcar, ¿quién tiene el derecho de paso?",
+    "options": [
+      "El que va más rápido",
+      "El vehículo a la derecha",
+      "El vehículo a la izquierda",
+      "Nadie"
+    ],
+    "answer": "El vehículo a la derecha",
+    "explanation": "En intersecciones sin señales, el derecho de paso es para quien viene por la derecha."
+  },
+  {
+    "id": 137,
+    "question": "Si su auto se hunde en el agua, usted debe intentar salir por:",
+    "options": [
+      "La puerta",
+      "Una ventana abierta",
+      "El maletero",
+      "El techo solar"
+    ],
+    "answer": "Una ventana abierta",
+    "explanation": "La presión del agua impide abrir las puertas hasta que el auto esté lleno de agua."
+  },
+  {
+    "id": 138,
+    "question": "¿Cuál es el recargo anual de seguro por 3 años por un DUI?",
+    "options": [
+      "S500",
+      "$1000",
+      "$3000",
+      "No hay recargo"
+    ],
+    "answer": "$1000",
+    "explanation": "Es obligatorio pagar $1000 anuales por 3 años tras un DUI o negarse a la prueba del aliento."
+  },
+  {
+    "id": 139,
+    "question": "Si los frenos fallan, usted debe primero:",
+    "options": [
+      "Apagar el motor",
+      "Cambiar a una marcha más baja y bombear el pedal del freno",
+      "Usar el freno de mano",
+      "Girar bruscamente"
+    ],
+    "answer": "Cambiar a una marcha más baja y bombear el pedal del freno",
+    "explanation": "Intentar recuperar presión de frenado es la prioridad."
+  },
+  {
+    "id": 140,
+    "question": "Un octágono rojo siempre significa:",
+    "options": [
+      "Ceda el paso",
+      "Pare (Stop)",
+      "Peligro",
+      "Construcción"
+    ],
+    "answer": "Pare (Stop)",
+    "explanation": "Es la forma única universal de la señal de pare."
+  },
+  {
+    "id": 141,
+    "question": "Si se ve involucrado en un accidente que causa lesiones mientras su licencia está suspendida, se enfrenta a:",
+    "options": [
+      "Solo una multa de $100",
+      "Multa, suspensión adicional y mínimo 45 días de cárcel",
+      "Nada si no fue su culpa",
+      "Tener que repetir el examen"
+    ],
+    "answer": "Multa, suspensión adicional y mínimo 45 días de cárcel",
+    "explanation": "Conducir suspendido es un delito agravado si hay heridos."
+  },
+  {
+    "id": 142,
+    "question": "El límite de velocidad en distritos comerciales o residenciales de NJ es:",
+    "options": [
+      "25 mph",
+      "35 mph",
+      "50 mph",
+      "55 mph"
+    ],
+    "answer": "25 mph",
+    "explanation": "A menos que se indique lo contrario por señales específicas."
+  },
+  {
+    "id": 143,
+    "question": "Al conducir en una autopista de NJ, ¿qué carril debe usar normalmente?",
+    "options": [
+      "Carril izquierdo",
+      "Carril derecho o central",
+      "El carril de hombro",
+      "Como usted prefiera"
+    ],
+    "answer": "Carril derecho o central",
+    "explanation": "El carril izquierdo es para adelantar."
+  },
+  {
+    "id": 144,
+    "question": "¿A qué distancia de un cruce peatonal (crosswalk) está prohibido estacionarse?",
+    "options": [
+      "10 pies",
+      "25 pies",
+      "50 pies",
+      "100 pies"
+    ],
+    "answer": "25 pies",
+    "explanation": "Garantizar la visibilidad de los peatones cruzando."
+  },
+  {
+    "id": 145,
+    "question": "En NJ, ¿a qué distancia de un hidrante de incendios puede estacionarse?",
+    "options": [
+      "5 pies",
+      "10 pies",
+      "15 pies",
+      "20 pies"
+    ],
+    "answer": "10 pies",
+    "explanation": "Distance standard for fire hydrant safety."
+  },
+  {
+    "id": 146,
+    "question": "Si un conductor ebrio causa un accidente tras salir de su fiesta, usted puede:",
+    "options": [
+      "Ser demandado legalmente",
+      "Ser arrestado por DUI",
+      "No tener problemas",
+      "Peder su licencia"
+    ],
+    "answer": "Ser demandado legalmente",
+    "explanation": "Ley de responsabilidad del anfitrión."
+  },
+  {
+    "id": 147,
+    "question": "¿Qué significa una luz verde constante?",
+    "options": [
+      "Vaya sin mirar",
+      "Proceda a través de la intersección si está despejada",
+      "Deténgase primero",
+      "Aumente la velocidad"
+    ],
+    "answer": "Proceda a través de la intersección si está despejada",
+    "explanation": "La luz verde autoriza el paso con precaución."
+  },
+  {
+    "id": 148,
+    "question": "¿Cuál es la forma de una señal de zona escolar?",
+    "options": [
+      "Octágono",
+      "Pentágono",
+      "Círculo",
+      "Cuadrado"
+    ],
+    "answer": "Pentágono",
+    "explanation": "Forma única para advertencias escolares."
+  },
+  {
+    "id": 149,
+    "question": "Si el acelerador se atasca, usted debe primero:",
+    "options": [
+      "Apagar el motor",
+      "Cambiar a neutral (punto muerto)",
+      "Pisar el freno de mano",
+      "Saltar del auto"
+    ],
+    "answer": "Cambiar a neutral (punto muerto)",
+    "explanation": "Prioridad para desconectar la potencia a las ruedas."
+  },
+  {
+    "id": 150,
+    "question": "Usted no puede estacionar a menos de ____ de una señal de STOP:",
+    "options": [
+      "10 pies",
+      "25 pies",
+      "50 pies",
+      "100 pies"
+    ],
+    "answer": "50 pies",
+    "explanation": "Standard distance for stop sign visibility."
+  }
+]
