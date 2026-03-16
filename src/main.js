@@ -24,6 +24,7 @@ let currentStudyPage = 1;
 const questionsPerPage = 25;
 
 // DOM Elements
+const splashScreen = document.getElementById('splash-screen');
 const mainLanding = document.getElementById('main-landing');
 const studyResources = document.getElementById('study-resources');
 const authScreen = document.getElementById('auth-screen');
@@ -565,3 +566,10 @@ async function trackVisit() {
 // Initial View & Tracking
 trackVisit();
 showSection(mainLanding);
+
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    splashScreen.style.opacity = '0';
+    splashScreen.style.visibility = 'hidden';
+  }, 2000);
+});
