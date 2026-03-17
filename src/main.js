@@ -22,6 +22,7 @@ let currentUser = null;
 let forcedFail = false;
 let currentStudyPage = 1;
 const questionsPerPage = 25;
+let offlineQueue = JSON.parse(localStorage.getItem('offline_exams') || '[]');
 
 // DOM Elements
 const splashScreen = document.getElementById('splash-screen');
@@ -110,6 +111,13 @@ const historyList = document.getElementById('history-list');
 onAuthStateChanged(auth, (user) => {
   if (user) {
     currentUser = user;
+    localStorage.setItem('cached_user', JSON.stringify({
+      uid: user.uid,
+      email: user.email,
+      displayName: user.displayName,
+      photoURL: user.photoURL
+    }));
+    
     headerUserEmail.textContent = user.displayName || user.email;
     if (user.photoURL) {
       userPhoto.src = user.photoURL;
@@ -126,8 +134,11 @@ onAuthStateChanged(auth, (user) => {
     landingUserEmail.textContent = user.displayName || user.email;
     
     updateDashboard();
+    syncOfflineData();
   } else {
     currentUser = null;
+    localStorage.removeItem('cached_user');
+    localStorage.removeItem('user_history');
     userHeader.classList.add('hidden');
     navLoginBtn.style.display = 'block';
     landingUserInfo.classList.add('hidden');
@@ -137,6 +148,17 @@ onAuthStateChanged(auth, (user) => {
     }
   }
 });
+
+// Initial Restore from Cache
+const cachedUser = localStorage.getItem('cached_user');
+if (cachedUser && !currentUser) {
+  currentUser = JSON.parse(cachedUser);
+  headerUserEmail.textContent = currentUser.displayName || currentUser.email;
+  navLoginBtn.style.display = 'none';
+  landingUserInfo.classList.remove('hidden');
+  landingUserEmail.textContent = currentUser.displayName || currentUser.email;
+  updateDashboard();
+}
 
 function showSection(section) {
   [mainLanding, studyResources, authScreen, landingScreen, quizScreen, resultsScreen, dashboardScreen, adminAuthScreen, adminDashboardScreen].forEach(s => s.classList.add('hidden'));
@@ -270,58 +292,70 @@ landingLogoutBtn.addEventListener('click', () => signOut(auth));
 async function updateDashboard() {
   if (!currentUser) return;
   
-  try {
-    const userRef = doc(db, "users", currentUser.uid);
-    const userDoc = await getDoc(userRef);
-    
-    if (userDoc.exists()) {
-      const data = userDoc.data();
-      const history = data.history || [];
-      
-      // Update Stats
-      examsCountVal.textContent = history.length;
-      
-      if (history.length > 0) {
-        const totalCorrect = history.reduce((acc, curr) => acc + curr.score, 0);
-        const totalPossible = history.length * 50; 
-        const avgScore = Math.round((totalCorrect / totalPossible) * 100);
-        learningProgressVal.textContent = `${avgScore}%`;
-        
-        // Readiness Logic: Last 3 exams passed?
-        const lastThree = history.slice(-3);
-        const passedCount = lastThree.filter(h => h.passed).length;
-        
-        if (passedCount >= 2 && avgScore >= 80) {
-          readinessText.textContent = "¡ESTÁS LISTO! Estás aprobando con consistencia.";
-          readinessLabel.textContent = "Listo para el examen";
-          readinessLabel.style.color = "var(--success)";
-          document.getElementById('readiness-card').style.background = "rgba(16, 185, 129, 0.1)";
-        } else {
-          readinessText.textContent = "Sigue practicando. Necesitas más regularidad.";
-          readinessLabel.textContent = "Sigue practicando...";
-          readinessLabel.style.color = "var(--primary)";
-          document.getElementById('readiness-card').style.background = "rgba(255, 215, 0, 0.1)";
-        }
+  // Try to load from cache first
+  const cachedHistory = localStorage.getItem('user_history');
+  if (cachedHistory) {
+    renderDashboardWithData(JSON.parse(cachedHistory));
+  }
 
-        // Render History
-        historyList.innerHTML = '';
-        history.reverse().forEach(item => {
-          const div = document.createElement('div');
-          div.className = `history-item ${item.passed ? 'pass' : 'fail'}`;
-          const date = new Date(item.date).toLocaleDateString();
-          div.innerHTML = `
-            <div>
-              <div style="font-weight: 600;">${date}</div>
-              <div style="font-size: 0.75rem; color: var(--text-muted);">${item.passed ? 'Aprobado' : 'Reprobado'}</div>
-            </div>
-            <div style="font-weight: 700;">${item.score}/50</div>
-          `;
-          historyList.appendChild(div);
-        });
+  if (navigator.onLine) {
+    try {
+      const userRef = doc(db, "users", currentUser.uid);
+      const userDoc = await getDoc(userRef);
+      
+      if (userDoc.exists()) {
+        const data = userDoc.data();
+        const history = data.history || [];
+        localStorage.setItem('user_history', JSON.stringify(history));
+        renderDashboardWithData(history);
       }
+    } catch (e) {
+      console.error("Dashboard error:", e);
     }
-  } catch (e) {
-    console.error("Dashboard error:", e);
+  }
+}
+
+function renderDashboardWithData(history) {
+  // Update Stats
+  examsCountVal.textContent = history.length;
+  
+  if (history.length > 0) {
+    const totalCorrect = history.reduce((acc, curr) => acc + curr.score, 0);
+    const totalPossible = history.length * 50; 
+    const avgScore = Math.round((totalCorrect / totalPossible) * 100);
+    learningProgressVal.textContent = `${avgScore}%`;
+    
+    // Readiness Logic: Last 3 exams passed?
+    const lastThree = history.slice(-3);
+    const passedCount = lastThree.filter(h => h.passed).length;
+    
+    if (passedCount >= 2 && avgScore >= 80) {
+      readinessText.textContent = "¡ESTÁS LISTO! Estás aprobando con consistencia.";
+      readinessLabel.textContent = "Listo para el examen";
+      readinessLabel.style.color = "var(--success)";
+      document.getElementById('readiness-card').style.background = "rgba(16, 185, 129, 0.1)";
+    } else {
+      readinessText.textContent = "Sigue practicando. Necesitas más regularidad.";
+      readinessLabel.textContent = "Sigue practicando...";
+      readinessLabel.style.color = "var(--primary)";
+      document.getElementById('readiness-card').style.background = "rgba(255, 215, 0, 0.1)";
+    }
+
+    // Render History
+    historyList.innerHTML = '';
+    [...history].reverse().forEach(item => {
+      const div = document.createElement('div');
+      div.className = `history-item ${item.passed ? 'pass' : 'fail'}`;
+      const date = new Date(item.date).toLocaleDateString();
+      div.innerHTML = `
+        <div>
+          <div style="font-weight: 600;">${date}</div>
+          <div style="font-size: 0.75rem; color: var(--text-muted);">${item.passed ? 'Aprobado' : 'Reprobado'}</div>
+        </div>
+        <div style="font-weight: 700;">${item.score}/50</div>
+      `;
+      historyList.appendChild(div);
+    });
   }
 }
 
@@ -471,28 +505,76 @@ async function finishQuiz() {
     resultMessage.textContent = 'No alcanzaste el 80%. Estudia y vuelve a intentarlo.';
   }
 
-  // Save to Firestore
+  // Save Exam Result
+  const examResult = {
+    date: new Date().toISOString(),
+    score: score,
+    incorrect: incorrectScore,
+    passed: passed
+  };
+
   if (currentUser) {
-    try {
-      const userRef = doc(db, "users", currentUser.uid);
-      const userDoc = await getDoc(userRef);
-      const prevData = userDoc.exists() ? userDoc.data() : { history: [] };
-      
-      await setDoc(userRef, {
-        email: currentUser.email,
-        history: [...prevData.history, {
-          date: new Date().toISOString(),
-          score: score,
-          incorrect: incorrectScore,
-          passed: passed
-        }]
-      }, { merge: true });
-      updateDashboard();
-    } catch (e) {
-      console.error("Error saving score:", e);
+    // Save to Local Cache immediately
+    const cachedHistory = JSON.parse(localStorage.getItem('user_history') || '[]');
+    cachedHistory.push(examResult);
+    localStorage.setItem('user_history', JSON.stringify(cachedHistory));
+    renderDashboardWithData(cachedHistory);
+
+    if (navigator.onLine) {
+      try {
+        const userRef = doc(db, "users", currentUser.uid);
+        const userDoc = await getDoc(userRef);
+        const prevData = userDoc.exists() ? userDoc.data() : { history: [] };
+        
+        await setDoc(userRef, {
+          email: currentUser.email,
+          history: [...prevData.history, examResult]
+        }, { merge: true });
+      } catch (e) {
+        console.error("Error saving score to Firebase:", e);
+        // Fallback: save to offline queue
+        queueForOfflineSync(examResult);
+      }
+    } else {
+      // Offline: save to queue
+      queueForOfflineSync(examResult);
+      alert('Examen guardado localmente. Se sincronizará cuando recuperes conexión.');
     }
   }
 }
+
+function queueForOfflineSync(result) {
+  offlineQueue.push(result);
+  localStorage.setItem('offline_exams', JSON.stringify(offlineQueue));
+}
+
+async function syncOfflineData() {
+  if (!currentUser || !navigator.onLine || offlineQueue.length === 0) return;
+
+  try {
+    const userRef = doc(db, "users", currentUser.uid);
+    const userDoc = await getDoc(userRef);
+    let history = userDoc.exists() ? userDoc.data().history || [] : [];
+    
+    // Add all offline results
+    history = [...history, ...offlineQueue];
+    
+    await setDoc(userRef, {
+      email: currentUser.email,
+      history: history
+    }, { merge: true });
+
+    // Clear queue
+    offlineQueue = [];
+    localStorage.removeItem('offline_exams');
+    updateDashboard(); // Refresh UI
+    console.log('Offline data synced successfully');
+  } catch (e) {
+    console.error("Error syncing offline data:", e);
+  }
+}
+
+window.addEventListener('online', syncOfflineData);
 
 // Event Listeners
 startBtn.addEventListener('click', initQuiz);
@@ -556,6 +638,8 @@ async function loadAdminDashboard() {
 }
 
 async function trackVisit() {
+  if (!navigator.onLine) return;
+  
   try {
     const statsRef = doc(db, "stats", "global");
     

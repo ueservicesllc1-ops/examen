@@ -1,0 +1,22 @@
+{
+  "name": "NJ Test Drive | Simulador de Examen",
+  "short_name": "NJ Test Drive",
+  "description": "Practica para tu examen de conducir de New Jersey con este simulador interactivo.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0b",
+  "theme_color": "#eab60b",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/logo2.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

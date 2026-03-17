@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NJ Test Drive | Simulador de Examen</title>
     <meta name="description" content="Practica para tu examen de conducir de New Jersey con este simulador interactivo de preguntas y respuestas reales.">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#eab60b">
+    <link rel="apple-touch-icon" href="/images/logo2.png">
   </head>
   <body>
     <!-- Splash Screen / Preloader -->
@@ -267,5 +270,14 @@
       </div>
     </footer>
     <script type="module" src="/src/main.js"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(reg => console.log('Service Worker registered', reg))
+            .catch(err => console.log('Service Worker registration failed', err));
+        });
+      }
+    </script>
   </body>
 </html>
