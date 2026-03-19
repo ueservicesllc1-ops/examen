@@ -234,7 +234,10 @@
       <section id="admin-dashboard-screen" class="glass-card hidden" style="max-width: 900px;">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
           <h1 style="margin: 0;">Panel de Control</h1>
-          <button id="admin-exit-btn" class="btn btn-outline" style="width: auto; padding: 0.5rem 1rem;">Cerrar Panel</button>
+          <div style="display: flex; gap: 0.5rem;">
+            <button id="admin-clear-cache-btn" class="btn btn-outline" style="width: auto; padding: 0.5rem 1rem; border-color: var(--error); color: var(--error); font-size: 0.8rem;">Limpiar Caché y SW</button>
+            <button id="admin-exit-btn" class="btn btn-outline" style="width: auto; padding: 0.5rem 1rem;">Cerrar Panel</button>
+          </div>
         </div>
 
         <div class="stats-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
@@ -273,7 +276,7 @@
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js')
+          navigator.serviceWorker.register('./sw.js')
             .then(reg => console.log('Service Worker registered', reg))
             .catch(err => console.log('Service Worker registration failed', err));
         });

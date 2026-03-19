@@ -79,6 +79,7 @@ const adminPinInput = document.getElementById('admin-pin');
 const adminLoginBtn = document.getElementById('admin-login-btn');
 const adminBackBtn = document.getElementById('admin-back-btn');
 const adminExitBtn = document.getElementById('admin-exit-btn');
+const adminClearCacheBtn = document.getElementById('admin-clear-cache-btn');
 const totalVisitsVal = document.getElementById('total-visits-val');
 const footerVisitsVal = document.getElementById('footer-visits-val');
 const totalUsersVal = document.getElementById('total-users-val');
@@ -621,6 +622,38 @@ exitBtn.addEventListener('click', () => {
 openAdminLink.addEventListener('click', () => showSection(adminAuthScreen));
 adminBackBtn.addEventListener('click', () => showSection(mainLanding));
 adminExitBtn.addEventListener('click', () => showSection(mainLanding));
+
+if (adminClearCacheBtn) {
+  adminClearCacheBtn.addEventListener('click', async () => {
+    if (confirm('¿Seguro? Esto desinstalará el Service Worker, borrará la caché local y reiniciará la app. Úsalo si ves errores de "MIME type" o fallos al cargar.')) {
+      try {
+        // Unregister SW
+        if ('serviceWorker' in navigator) {
+          const registrations = await navigator.serviceWorker.getRegistrations();
+          for (let registration of registrations) {
+            await registration.unregister();
+          }
+        }
+        
+        // Clear Caches
+        if ('caches' in window) {
+          const names = await caches.keys();
+          await Promise.all(names.map(name => caches.delete(name)));
+        }
+        
+        // Clear Storage
+        localStorage.clear();
+        sessionStorage.clear();
+        
+        // Final Reload
+        alert('Caché limpiada con éxito. La aplicación se reiniciará ahora.');
+        window.location.reload(true);
+      } catch (err) {
+        alert('Error al limpiar caché: ' + err.message);
+      }
+    }
+  });
+}
 
 adminLoginBtn.addEventListener('click', () => {
   if (adminPinInput.value === '1619') {
