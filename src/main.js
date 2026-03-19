@@ -269,7 +269,19 @@ loginBtn.addEventListener('click', async () => {
 googleLoginBtn.addEventListener('click', async () => {
   const provider = new GoogleAuthProvider();
   try {
-    await signInWithPopup(auth, provider);
+    const result = await signInWithPopup(auth, provider);
+    const user = result.user;
+    
+    // Create document immediately for new users
+    const userRef = doc(db, "users", user.uid);
+    const userDoc = await getDoc(userRef);
+    if (!userDoc.exists()) {
+      await setDoc(userRef, {
+        email: user.email,
+        createdAt: new Date().toISOString(),
+        history: []
+      });
+    }
   } catch (err) {
     authError.style.display = 'block';
     authError.textContent = "Error: " + err.message;
@@ -278,7 +290,16 @@ googleLoginBtn.addEventListener('click', async () => {
 
 registerBtn.addEventListener('click', async () => {
   try {
-    await createUserWithEmailAndPassword(auth, authEmail.value, authPassword.value);
+    const userCredential = await createUserWithEmailAndPassword(auth, authEmail.value, authPassword.value);
+    const user = userCredential.user;
+    
+    // Create document immediately for new users
+    const userRef = doc(db, "users", user.uid);
+    await setDoc(userRef, {
+      email: user.email,
+      createdAt: new Date().toISOString(),
+      history: []
+    });
   } catch (err) {
     authError.style.display = 'block';
     authError.textContent = "Error: " + err.message;
@@ -308,6 +329,15 @@ async function updateDashboard() {
         const history = data.history || [];
         localStorage.setItem('user_history', JSON.stringify(history));
         renderDashboardWithData(history);
+      } else {
+        // Create the document for new users so the admin can see them
+        await setDoc(userRef, {
+          email: currentUser.email,
+          createdAt: new Date().toISOString(),
+          history: []
+        });
+        localStorage.setItem('user_history', JSON.stringify([]));
+        renderDashboardWithData([]);
       }
     } catch (e) {
       console.error("Dashboard error:", e);
@@ -619,21 +649,26 @@ async function loadAdminDashboard() {
     totalUsersVal.textContent = querySnapshot.size;
     adminUsersList.innerHTML = '';
 
-    querySnapshot.forEach((doc) => {
-      const data = doc.data();
-      const item = document.createElement('div');
-      item.className = 'history-item';
-      item.innerHTML = `
-        <div style="font-size: 0.85rem;">
-          <div style="font-weight: 600; color: #fff;">${data.email || 'Usuario sin email'}</div>
-          <div style="color: var(--text-muted); font-size: 0.75rem;">Exámenes: ${data.history?.length || 0}</div>
-        </div>
-        <div style="font-size: 0.75rem; color: var(--primary);">${new Date(data.history?.[data.history.length-1]?.date || Date.now()).toLocaleDateString()}</div>
-      `;
-      adminUsersList.appendChild(item);
-    });
+    if (querySnapshot.empty) {
+      adminUsersList.innerHTML = '<div style="text-align: center; color: var(--text-muted); padding: 2rem;">No hay usuarios registrados todavía.</div>';
+    } else {
+      querySnapshot.forEach((doc) => {
+        const data = doc.data();
+        const item = document.createElement('div');
+        item.className = 'history-item';
+        item.innerHTML = `
+          <div style="font-size: 0.85rem;">
+            <div style="font-weight: 600; color: #fff;">${data.email || 'Usuario sin email'}</div>
+            <div style="color: var(--text-muted); font-size: 0.75rem;">Exámenes: ${data.history?.length || 0}</div>
+          </div>
+          <div style="font-size: 0.75rem; color: var(--primary);">${new Date(data.history?.[data.history.length-1]?.date || data.createdAt || Date.now()).toLocaleDateString()}</div>
+        `;
+        adminUsersList.appendChild(item);
+      });
+    }
   } catch (err) {
     console.error("Admin load error:", err);
+    adminUsersList.innerHTML = `<div style="text-align: center; color: var(--error); padding: 2rem;">Error al cargar usuarios: ${err.message}</div>`;
   }
 }
 
